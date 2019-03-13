@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/home.css">
+    <title>Coldy</title>
+</head>
+<body>
+    
+    <div class="menu">
+            <div class="scrollmenu">
+                    <a href="sunny" >Nắng</a>
+                        <a href="cool">Mát</a>
+                        <a href="rainy">Mưa</a>
+                        <a href="coldy">Lạnh</a>
+            </div>
+
+    </div>
+    <div class="title"><h1>Món Ăn Ngày Lạnh</h1></div>    
+    <div class="container">
+        <div id="img">
+            <img src="{{ nang.anh }}" alt="anh" width="500px" height="400px">
+        </div>
+
+        <div id="info">
+            <p style="text-align: center; font-size: 40px;">{{ nang.ten }}</p>            
+            <p><b>Địa chỉ:</b> {{ nang.diachi }}</p>  
+            <div class="switch">     
+                <input type="button" value="Đổi Món" onClick="window.location.href=window.location.href">
+            </div>          
+        </div>
+    </div>
+    <div class="row">
+        <div id="cachlam">
+            <p><i><b>Nguyên Liệu:</b></i> {{ nang.nguyenlieu }}</p>
+            <p><i><b>Cách làm:</b></i>
+                    {% for i in nang.cachlam %}
+                    <p>{{i}}</p>
+                    {% endfor %}
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+            <span style="color: rgb(23, 20, 212); clear: both; display: block;">
+                    ©2019 C4E25. Tầng 6, nhà C, tòa nhà Chigamex - 22 Thành Công, Ba Đình, Hà Nội
+            </span>
+            <span style="color: rgb(23, 20, 212); clear: both; display: block;">
+                    Made By Vũ Minh Hiền, Ngọ Tùng Dương, Nguyễn Mạnh Tùng
+            </span>
+        </div>
+
+</body>
+</html>

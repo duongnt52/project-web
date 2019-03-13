@@ -1,0 +1,118 @@
+* {
+    font-size: 1.2rem;
+}
+html, body {
+    height: 80%;
+}
+#container {
+    display: flex;
+    flex-direction: row; /*chon truc chinh */
+    justify-content: space-evenly; /* tac dong vao truc chinh */
+    /* tac dong truc phu: align-item*/
+    align-items: center; /* can chieu doc*/
+    height: 100%;
+
+}
+#container div a{
+    text-align: center;
+    text-decoration: none;
+}
+body{
+    /* background-image: url('background.jpg'); */
+    /* background: #8ce0fa */
+    background-color: #fff; background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),linear-gradient(#eee .1em, transparent .1em);background-size: 100% 1.2em;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.img {
+    background: #e99c9c;
+}
+#font {
+    font-family: 'Sniglet', cursive;
+    text-align: center;
+    color: rgb(209, 52, 248);
+}
+#font p{
+    font-size: 70px;
+}
+#container div a p{
+    font-family: 'Sniglet', cursive;
+    text-align: center;
+    color: rgb(23, 230, 40);
+}
+#container div a p{
+    font-size: 35px;
+}
+#img{
+    max-width: 100%;
+    height: auto;
+}
+#cachlam{
+    margin: 25px 50px 75px 100px;
+}
+.switch{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    align-items: center; 
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;   
+    
+  }
+  
+div.scrollmenu a:hover {
+    background-color: #777;
+    
+  }
+
+.menu{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    align-items: center;
+    background-color: #333;
+  
+}
+
+.title{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 25px 50px 75px 100px; 
+}
+
+.title h1{
+    font-size: 35px;
+}
+
+.footer{
+    clear: both;
+    text-align: center;
+    padding: 15px 0;
+    border-top: #eee 1px solid;
+    margin-top: 53px; 
+    background-color: #eee;
+}
+.footer span{
+    font-size: 15px;
+}
+
